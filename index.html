@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt 2 - Kalkulator Napiwków</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top">
+            <h1>BillSplitter</h1>
+            <p>PODZIEL SIĘ RACHUNKIEM ZE ZNAJOMYMI</p>
+        </div>
+        <div class="bottom">
+            <label for="price">Kwota do zapłaty:</label>
+            <input type="number" id="price">
+
+            <label for="people">Ilość osób:</label>
+            <input type="number" id="people">
+
+            <label for="tip">Napiwek:</label>
+            <select name="tip" id="tip">
+                <option value="0" disabled selected>- wybierz napiwek -</option>
+                <option value="0.05">5%</option>
+                <option value="0.10">10%</option>
+                <option value="0.15">15%</option>
+                <option value="0.20">20%</option>
+            </select>
+            <button class="count">Oblicz</button>
+            <p class="error"></p>
+            <p class="cost-info">
+                Powinniście się złożyć po <span class="cost"></span> zł.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

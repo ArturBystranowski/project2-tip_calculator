@@ -1,0 +1,82 @@
+* {
+	font-family: "Caveat", cursive;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.wrapper {
+	width: 600px;
+	background-color: #fff;
+	box-shadow: 0 0 10px;
+	border-radius: 10px;
+}
+
+.top {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: rgb(40, 66, 114);
+	color: white;
+	border-radius: 10px 10px 0 0;
+}
+.top p {
+	margin-bottom: 40px;
+}
+
+.bottom {
+	padding: 40px 20px;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+input,
+select {
+	margin-bottom: 15px;
+	width: 100%;
+	border-radius: 8px;
+	border: 1px solid rgb(205, 203, 219);
+	padding: 8px 10px;
+	font-size: 20px;
+}
+
+.count {
+	display: block;
+	margin: 20px auto;
+	padding: 10px 20px;
+	width: 40%;
+	border-radius: 10px;
+	font-size: 24px;
+	background-color: rgb(40, 66, 114);
+	color: white;
+	border: none;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.count:hover {
+	background-color: rgb(76, 100, 145);
+}
+
+.error {
+	color: tomato;
+	font-size: 24px;
+}
+
+.cost-info {
+	display: none;
+}
+
+.cost {
+	font-weight: bold;
+	font-size: 20px;
+}
